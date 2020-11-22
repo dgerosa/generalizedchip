@@ -59,7 +59,7 @@ def chip_asymptotic(q,chi1,chi2,theta1,theta2):
 
 
 
-
+@np.vectorize
 def chip_averaged(q,chi1,chi2,theta1,theta2,deltaphi,r=None,fref=None, M_msun=None):
     '''Averaged definition of chip. Eq (19) and Appendix A'''
 
@@ -118,19 +118,35 @@ def chip_averaged(q,chi1,chi2,theta1,theta2,deltaphi,r=None,fref=None, M_msun=No
 
 if __name__ == "__main__":
 
-    q=0.7
-    chi1=0.3
-    chi2=1
-    theta1=np.pi/3
-    theta2=np.pi/4
-    deltaphi=np.pi/5
-    fref= 20 # Hz
-    M_msun=60 # Msun
-    print("Heuristic chip:", chip_heuristic(q,chi1,chi2,theta1,theta2))
-    print("Asymptotic chip:", chip_asymptotic(q,chi1,chi2,theta1,theta2))
-    print("Generalized chip:", chip_generalized(q,chi1,chi2,theta1,theta2,deltaphi))
-    print("Averaged chip:", chip_averaged(q,chi1,chi2,theta1,theta2,deltaphi,fref=fref,M_msun=M_msun))
+    if True:
+        q=0.7
+        chi1=0.3
+        chi2=1
+        theta1=np.pi/3
+        theta2=np.pi/4
+        deltaphi=np.pi/5
+        fref= 20 # Hz
+        M_msun=60 # Msun
+        print("Heuristic chip:", chip_heuristic(q,chi1,chi2,theta1,theta2))
+        print("Asymptotic chip:", chip_asymptotic(q,chi1,chi2,theta1,theta2))
+        print("Generalized chip:", chip_generalized(q,chi1,chi2,theta1,theta2,deltaphi))
+        print("Averaged chip:", chip_averaged(q,chi1,chi2,theta1,theta2,deltaphi,fref=fref,M_msun=M_msun))
 
-    #Alternatively:
-    #r=10
-    #print("Averaged chip:", chip_averaged(q,chi1,chi2,theta1,theta2,deltaphi,r=r))
+        #Alternatively:
+        #r=10
+        #print("Averaged chip:", chip_averaged(q,chi1,chi2,theta1,theta2,deltaphi,r=r))
+
+    #Also works with numpy array:
+    if False:
+        q=np.array([0.7,0.7])
+        chi1=np.array([0.3,0.3])
+        chi2=np.array([1,1])
+        theta1=np.array([np.pi/3,np.pi/3])
+        theta2=np.array([np.pi/4,np.pi/4])
+        deltaphi=np.array([np.pi/5,np.pi/5])
+        fref= np.array([20,20]) # Hz
+        M_msun= np.array([60,60]) # Msun
+        print("Heuristic chip:", chip_heuristic(q,chi1,chi2,theta1,theta2))
+        print("Asymptotic chip:", chip_asymptotic(q,chi1,chi2,theta1,theta2))
+        print("Generalized chip:", chip_generalized(q,chi1,chi2,theta1,theta2,deltaphi))
+        print("Averaged chip:", chip_averaged(q,chi1,chi2,theta1,theta2,deltaphi,fref=fref,M_msun=M_msun))
