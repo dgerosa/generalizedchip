@@ -61,7 +61,7 @@ def chip_asymptotic(q,chi1,chi2,theta1,theta2):
 
 @np.vectorize
 def chip_averaged(q,chi1,chi2,theta1,theta2,deltaphi,r=None,fref=None, M_msun=None):
-    '''Averaged definition of chip. Eq (19) and Appendix A'''
+    '''Averaged definition of chip. Eq (15) and Appendix A'''
 
     # Convert frequency to separation, if necessary
     if r is None and fref is None: raise ValueError
