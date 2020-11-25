@@ -1,6 +1,6 @@
 '''
 A generalized precession parameter $\chip$ to interpret gravitational-wave data
-Gerosa et al 2020
+Gerosa et al (2020). arXiv:2011.11948
 '''
 
 import numpy as np
