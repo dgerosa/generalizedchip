@@ -1,5 +1,8 @@
 # generalizedchip
 
+> This repository is outdated. A far more accurate implementation is now part of the [precession](https://github.com/dgerosa/precession) code. Please use that one.
+
+
 ### A generalized precession parameter to interpret gravitational-wave data
 
 > Originally designed for waveform approximants, the effective precession parameter `chip` is the most commonly used quantity to characterize spin-precession effects in gravitational-wave observations of black-hole binary coalescences. We point out that the current definition of `chip` retains some, but not all, variations taking place on the precession timescale. We rectify this inconsistency and propose more general definitions that either fully consider or fully average those oscillations. Our generalized parameter 0<=`chip`<=2 presents an exclusive region `chip`>1 that can only be populated by binaries with two precessing spins. We apply our prescriptions to current LIGO/Virgo events and find that posterior distributions of `chip` tend to show longer tails at larger values. This appears to be a  generic feature, implying that (i) current `chip` measurement errors might be underestimated, but also that (ii) evidence for spin precession in current data might be stronger than previously inferred. Among the gravitational-wave events released to date, that which shows the most striking behavior is GW190521. 
