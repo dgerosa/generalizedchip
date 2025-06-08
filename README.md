@@ -1,6 +1,6 @@
 # generalizedchip
 
-> This repository is outdated. A far more accurate implementation is now part of the [precession](https://github.com/dgerosa/precession) code. Please use that one.
+> This repository is now outdated. A  more accurate implementation of the $\chi_{\rm p}$ parametrizations is now part of the [precession](https://github.com/dgerosa/precession) code. Please use that one.
 
 
 ### A generalized precession parameter to interpret gravitational-wave data
