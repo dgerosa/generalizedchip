@@ -10,10 +10,6 @@
 
 This repository contains a short code supporting [arXiv:2011.11948](https://arxiv.org/abs/2011.11948). We are very happy if you find this useful for your research; please cite our paper. For a DOI pointing to this repository: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4288255.svg)](https://doi.org/10.5281/zenodo.4288255)
 
-
-This code is developed and maintained by [Davide Gerosa](https://davidegerosa.com/). To report bugs, please open an issue on GitHub. If you want to contact me, it's `d.gerosa@bham.ac.uk`. 
-
-
 ### Usage
 
 The main usage is as follows:
